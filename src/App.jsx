@@ -21,7 +21,7 @@ const [result, setResult] = useState(null);
   const formData = new FormData();
   formData.append("file", imageFile);
 
-  const res = await fetch("http://127.0.0.1:8000/detect", {
+  const res = await fetch("https://ai-object-detection-api-8mc4.onrender.com/detect", {
     method: "POST",
     body: formData,
   });
